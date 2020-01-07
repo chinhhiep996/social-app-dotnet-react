@@ -19,7 +19,7 @@ namespace api.Entities
         public ICollection<FollowingEntity> Followings { get; set; }
         public ICollection<FollowerEntity> Followers { get; set; }
         public ICollection<LikeEntity> Likes { get; set; }
-        public string HashedPassword { get; set; }
-        public string Salt { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 }
